@@ -1,0 +1,13 @@
+### Core
+
+flask==1.1.2
+pydantic[dotenv]==1.6.1
+pyowm==3.0.0
+requests==2.24.0
+
+
+### Deploy
+gunicorn==20.0.4
+
+### Chatbot
+aiogram==2.9.2

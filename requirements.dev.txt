@@ -1,0 +1,15 @@
+-r requirements.txt
+
+### Tests
+pytest==6.0.1
+pytest-cov==2.10.0
+
+### Linters
+mypy==0.782
+bandit==1.6.2
+safety==1.9.0
+pylint==2.5.3
+
+### Utils
+ipython==7.17.0
+bump2version==1.0.0
