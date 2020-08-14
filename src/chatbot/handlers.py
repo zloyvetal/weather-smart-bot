@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.DEBUG)
 @dp.message_handler(commands=['help'])
 async def help_menu(message: Message):
     """Функция для предоставления пользователю информации по командам бота
-        принимает сообщение от юзера, вовзаращет текст с описанием команд"""
+        принимает сообщение от юзера, возращает текст с описанием команд"""
     await message.answer(text='''
     Команды бота, которые он способен понимать :
     /start - дает начало работы бота
@@ -116,7 +116,7 @@ async def echo(message: Message):
                 f'Сегодня в городе {text} {data_with_weather["weather"]}.\n Температура в течении дня будет около {temp}'
                 f' градуса по Цельсию. \n {data_with_weather["how_to_wear"]} \n {data_with_weather["do_we_need_umbrella"]}')
         else:
-            await message.answer(f'К сожалению города {text} нет, проверьте правильно ввода!')
+            await message.answer(f'К сожалению города {text} нет, проверьте правильность ввода!')
 
     else:
         await message.answer(f'Нет такой команды')
